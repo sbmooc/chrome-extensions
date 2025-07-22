@@ -30,6 +30,22 @@ The extension uses:
 - Chrome's scripting API to extract PR information from the page
 - The clipboard API to copy the formatted markdown link
 
+## Slack Integration
+
+To make the markdown links work properly in Slack:
+
+1. **Enable markdown formatting in Slack:**
+   - Go to **Preferences** → **Advanced**
+   - Under **Input options**, check "Format messages with markup"
+   - This allows Slack to recognize and render markdown-style links
+
+2. **Using the copied links:**
+   - After copying from GitHub, paste directly into Slack
+   - The link will appear as `[PR Title](url)` initially
+   - Press Enter to send, and Slack will render it as a clickable link with the PR title as text
+
+**Note:** Without enabling markup formatting in Slack, the links will appear as plain text rather than clickable links.
+
 ## Permissions
 
 - `activeTab`: To read PR information from the current tab
